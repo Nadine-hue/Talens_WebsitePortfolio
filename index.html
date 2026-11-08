@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Nadine Talens — Information Technology student portfolio." />
+        <meta name="theme-color" content="#1b1a24" />
+        <title>Talens | Website Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css" />
+    </head>
+    <body>
+        <!-- Optional background audio and its playback control. -->
+        <audio id="bgMusic" loop preload="auto" src="songs/BSD-ED1.mp3"></audio>
+        <button class="music-toggle"
+            id="musicToggle"
+            aria-label="Toggle background music"
+            title="Toggle background music">♫
+        </button>
+
+        <!-- Decorative background canvas is separate from page content. -->
+        <canvas id="ambientCanvas" aria-hidden="true"></canvas>
+        <!-- Global header and navigation links to the sections below. -->
+        <header class="site-header">
+            <nav class="navbar container" aria-label="Main navigation">
+                <a class="brand" href="#home" aria-label="Go to home section">
+                    <span class="brand-mark" aria-hidden="true"></span>
+                    <span class="brand-name">Nadine Garing Talens</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Tech Stack</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Achievements</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a class="nav-contact" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 1. Home: introduction and primary calls to action. -->
+            <section class="hero section" id="home">
+                <div class="container hero-grid">
+                    <div class="hero-copy">
+                        <p class="eyebrow">INFORMATION TECHNOLOGY STUDENT</p>
+                        <h1>Hi, I'm <span>Nadine</span></h1>
+                        <h3>Not everything is meant to be. But everything is worth trying.</h3>
+                        <h3><em>- Osamu Dazai (Bungo Stray Dogs)</em></h3>
+                        <p class="hero-text"> I'm learning to turn ideas into practical solutions through programming, web development, and data analysis. 
+                          This portfolio showcases my projects, skills, and experiences as I continue to grow in the field of technology.</p>
+                        <div class="hero-actions">
+                            <a class="button primary" href="#projects">View My Projects</a>
+                            <a class="button secondary" href="#contact">Contact Me</a>
+                        </div>
+                        <div class="hero-note"><span class="status-dot"></span> Open to learning and collaboration</div>
+                    </div>
+                    <div class="hero-card" aria-label="Portfolio introduction card">
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+                        <div class="profile-placeholder">
+                            <img src="images/profile.jpg" alt="Nadine Talens" class="profile-photo" />
+                            <span class="profile-caption">IT STUDENT</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. About: background, approach, and personal strengths. -->
+            <section class="section section-soft" id="about">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">GET TO KNOW ME</p>
+                        <h2>About <span>Me</span></h2>
+                        <p>A little about my background, interests, and goals.</p>
+                    </div>
+                    <div class="about-grid">
+                        <article class="panel about-main">
+                            <h3>Who I Am</h3>
+                            <p>I’m a BSIT student continuing to learn and grow in the field of technology. Through my studies, 
+                              I’ve gained experience with mobile app and system design, data analysis, web development, system design and basic database management.</p>
+                            <p>Working on academic projects has helped me understand how to apply what I learn to practical tasks, 
+                              from designing & developing websites and connecting with databases to analysing data and planning systems. 
+                              My internship experience and participation in IT-related events have also given me opportunities to learn beyond the classroom.</p>
+                            <p>I’m willing to improve through practice, feedback, and new experiences. 
+                              I value being dependable, listening to others, and contributing to group work. 
+                              As I continue my studies, I hope to strengthen my technical skills and build practical solutions that can help address real needs.</p>
+                        </article>
+                        <div class="about-facts">
+                            <article class="fact-card">
+                                <span class="fact-icon">▤</span>
+                                <div>
+                                    <h3>Continuous Learning</h3>
+                                    <p>Open to learn and improve my skills as I continue to grow.</p>
+                                </div>
+                            </article>
+                            <article class="fact-card">
+                                <span class="fact-icon">⌘</span>
+                                <div>
+                                    <h3>Attention to Detail</h3>
+                                    <p>Take time to review my work, pay attention to small details, and aim for accuracy.</p>
+                                </div>
+                            </article>
+                            <article class="fact-card">
+                                <span class="fact-icon">◇</span>
+                                <div>
+                                    <h3>Teamwork</h3>
+                                    <p>Listening to others, sharing ideas, and contributing.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Tech Stack: skills grouped by category. -->
+            <section class="section" id="skills">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">WHAT I'M LEARNING</p>
+                        <h2>Tech Stack <span>& Skills</span></h2>
+                        <p>Tools and platforms I studied and used through coursework and practice.</p>
+                    </div>
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <h3>Development</h3>
+                            <p class="skill-description">Programming, web development, and databases</p>
+                            <ul class="skill-list skill-list-development">
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/mysql.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>MySQL</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/html5.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>HTML</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/css3.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>CSS</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/javascript.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>JavaScript</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/java.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>Java</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/python.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>Python</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/c-sharp.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>C#</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/c++.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>C++</span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="skill-card">
+                            <h3>Data &amp; Analytics</h3>
+                            <p class="skill-description">Data analysis, reporting, and visualization</p>
+                            <ul class="skill-list">
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/power-bi.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>Power BI</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/tableau.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>Tableau</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/microsoft-excel.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>Microsoft Excel</span>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="skill-card">
+                            <h3>Design &amp; Productivity</h3>
+                            <p class="skill-description">Interface design, graphics, and documentation</p>
+                            <ul class="skill-list">
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/figma.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>Figma</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/canva.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>Canva</span>
+                                </li>
+                                <li class="skill-logo-item">
+                                    <img class="skill-logo"
+                                        src="images/skills/google-docs.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        loading="lazy"
+                                    /><span>Google Docs</span>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="projects-controls" aria-label="Skills carousel controls">
+                        <button class="project-arrow"
+                            id="skillPrevious"
+                            type="button"
+                            aria-label="Show previous skill category"
+                            title="Previous category">←
+                        </button>
+                        <input
+                            class="projects-range"
+                            id="skillsRange"
+                            type="range"
+                            min="0"
+                            max="2"
+                            value="0"
+                            step="1"
+                            aria-label="Choose a skill category"
+                        />
+                        <button
+                            class="project-arrow"
+                            id="skillNext"
+                            type="button"
+                            aria-label="Show next skill category"
+                            title="Next category">→
+                        </button>
+                        <output class="projects-count" id="skillsCount" aria-live="polite">01 / 03</output>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Projects: project cards and carousel controls. -->
+            <section class="section section-soft" id="projects">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">SELECTED WORK</p>
+                        <h2>My <span>Projects</span></h2>
+                        <p>Academic and team projects that reflect my learning journey.</p>
+                    </div>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="project-art project-photo">
+                                <span>01</span
+                                ><img src="images/projects/dwcc-ces.jpg"
+                                    alt="DWCC CES Management System entity relationship diagram and data schema"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <p class="project-type">DATABASE DESIGN · SYSTEM ANALYSIS</p>
+                                <h3>DWCC CES Management System</h3>
+                                <p>A proposed information management system for organizing community extension projects beneficiaries, donations, volunteers, and related school records.</p>
+                                <div class="tags"><span>MySQL</span><span>ERD</span><span>Requirements</span></div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art project-photo">
+                                <span>02</span>
+                                <img src="images/projects/thirst-track.jpg"
+                                    alt="Thirst Track mobile app wireframes and smart bottle hydration dashboard"/>
+                            </div>
+                            <div class="project-content">
+                                <p class="project-type">IOT · MOBILE SYSTEM DESIGN</p>
+                                <h3>Thirst Track: Smart Hydration Reminder</h3>
+                                <p>A smart hydration system concept that tracks water intake, displays daily progress, and sends reminders to encourage regular hydration.</p>
+                                <div class="tags">
+                                    <span>ESP32</span><span>Flow / Weight Sensors</span><span>Offline Sync</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art project-photo">
+                                <span>03</span
+                                ><img
+                                    src="images/projects/cybersecurity-attack-dashboard.jpg"
+                                    alt="Cybersecurity attack pattern analytics dashboard with category, target, and correlation charts"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <p class="project-type">DATA ANALYTICS · CYBERSECURITY</p>
+                                <h3>Cybersecurity Attack Pattern Analysis</h3>
+                                <p>A Python-based analysis of cybersecurity attack data to examine attack categories, tools, techniques, target systems, and defensive measures.</p>
+                                <div class="tags">
+                                    <span>Python</span><span>Pandas</span><span>Plotly</span
+                                    ><span>Data Visualization</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art project-photo">
+                                <span>04</span
+                                ><img
+                                    src="images/projects/lumine-ecommerce.jpg"
+                                    alt="Lumine e-commerce milk tea storefront showing menu categories and drink product cards"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <p class="project-type">WEB DEVELOPMENT · E-COMMERCE</p>
+                                <h3>Lumine Ecommerce Milktea Website</h3>
+                                <p>An online storefront concept for a milk tea brand, designed to present its products and provide a simple online shopping experience.</p>
+                                <div class="tags">
+                                    <span>E-commerce</span><span>Web Design</span><span>Online Store</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art project-photo">
+                                <span>05</span
+                                ><img
+                                    src="images/projects/music-mental-health.jpg"
+                                    alt="Microsoft Excel dashboard summarizing self-reported music listening and mental health survey results"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <p class="project-type">DATA ANALYTICS · MENTAL HEALTH RESEARCH</p>
+                                <h3>Music &amp; Mental Health Analysis</h3>
+                                <p>An Excel-based study exploring possible associations between music listening habits and self-reported mental health indicators among working students aged 18 to 22. 
+                                  The survey results are not clinical diagnoses.</p>
+                                <div class="tags">
+                                    <span>Microsoft Excel</span><span>Power Query</span><span>PivotTables</span
+                                    ><span>Dashboard</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art project-photo">
+                                <span>06</span
+                                ><img
+                                    src="images/projects/pinoy-riddle-rush.jpg"
+                                    alt="Pinoy Riddle Rush Java game main menu with Play Game and Game Rules options"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <p class="project-type">JAVA DEVELOPMENT · EDUCATIONAL GAME</p>
+                                <h3>Pinoy Riddle Rush</h3>
+                                <p>A desktop game featuring Filipino bugtong, with letter-guessing rounds, three difficulty levels, hints, and a riddle viewer.</p>
+                                <div class="tags">
+                                    <span>Java</span><span>Swing</span><span>OOP</span><span>Game Development</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art project-photo">
+                                <span>07</span
+                                ><img
+                                    src="images/projects/sync-space.jpg"
+                                    alt="Sync Space student collaboration app concept showing its dashboard and a shared group project"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <p class="project-type">SYSTEM DESIGN · UX RESEARCH</p>
+                                <h3>Sync Space: Student Collaboration App</h3>
+                                <p>A proposed shared workspace for college teams to coordinate conversations, meetings, tasks, deadlines, 
+                                  and shared documents with version control.</p>
+                                <div class="tags">
+                                    <span>UX Research</span><span>Interview Design</span><span>Task Management</span
+                                    ><span>Document Collaboration</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art project-photo">
+                                <span>08</span
+                                ><img
+                                    src="images/projects/dwcc-fast-feast.jpg"
+                                    alt="DWCC Fast Feast food-ordering app concept showing its menu, order checkout, payment options, and delivery tracking screens"
+                                />
+                            </div>
+                            <div class="project-content">
+                                <p class="project-type">MOBILE APP DESIGN · FOOD ORDERING</p>
+                                <h3>DWCC Fast Feast</h3>
+                                <p>A food-ordering app concept for browsing meal categories and best sellers, reviewing a cart, selecting a payment method, 
+                                  and checking delivery progress.</p>
+                                <div class="tags">
+                                    <span>Mobile UI</span><span>Food Ordering</span><span>Checkout Flow</span
+                                    ><span>Delivery Tracking</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-controls" aria-label="Project carousel controls">
+                        <button class="project-arrow"
+                            id="projectPrevious"
+                            type="button"
+                            aria-label="Show previous project"
+                            title="Previous project">←
+                        </button>
+                        <input
+                            class="projects-range"
+                            id="projectsRange"
+                            type="range"
+                            min="0"
+                            max="8"
+                            value="0"
+                            step="1"
+                            aria-label="Choose a project"/>
+                        <button class="project-arrow"
+                            id="projectNext"
+                            type="button"
+                            aria-label="Show next project"
+                            title="Next project">→
+                        </button>
+                        <output class="projects-count" id="projectsCount" aria-live="polite">01 / 09</output>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Certifications and achievements: training and event participation. -->
+            <section class="section" id="certifications">
+                <div class="container certifications-container">
+                    <div class="section-heading certifications-heading">
+                        <p class="eyebrow">PROGRESS &amp; RECOGNITION</p>
+                        <h2>Certifications <span>&amp; Achievements</span></h2>
+                        <p>Certificates from training programs and events that form part of my learning experience as an IT student.</p>
+                    </div>
+
+                    <div class="certifications-stack">
+                        <article class="experience-card achievement-card certification-card">
+                            <div class="achievement-copy">
+                                <span class="experience-number">01 / ACHIEVEMENT</span>
+                                <h3>Certified Data Science Associate</h3>
+                                <p>Completed the CDSA program, which provided foundational knowledge in data science and analytics, enhancing my ability to work with data effectively.</p>
+                                <a
+                                    class="cert-link"
+                                    href="images/certifications/N A D I N E G . T A L E N S.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Certificate of Completion</a>
+                            </div>
+                            <div class="achievement-media">
+                                <img
+                                    class="experience-image"
+                                    src="images/certifications/NadineG.Talens_CDSA.jpg"
+                                    alt="CDSA certificate"/>
+                            </div>
+                        </article>
+
+                        <article class="experience-card achievement-card certification-card reverse">
+                            <div class="achievement-media">
+                                <img
+                                    class="experience-image"
+                                    src="images/certifications/Talens - BCRV.jpg"
+                                    alt="BCRV certificate of training"/>
+                            </div>
+                            <div class="achievement-copy">
+                                <span class="experience-number">02 / ACHIEVEMENT</span>
+                                <h3>TESDA and BCRV</h3>
+                                <p>Participated in the TESDA & BCRV training, gaining knowledge of Java, including basic syntax, variables, control structures, and OOP concepts.</p>
+                                <a
+                                    class="cert-link"
+                                    href="images/certifications/BCRV-Certificate-of-Training.jpg"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Certificate of Training</a>
+                            </div>
+                        </article>
+
+                        <article class="experience-card achievement-card certification-card">
+                            <div class="achievement-copy">
+                                <span class="experience-number">03 / SEMINARS & EVENTS</span>
+                                <h3>7th MIMAROPA Regional IT Congress</h3>
+                                <p class="cert-event-theme">
+                                  <strong>Theme:</strong> “Blockchain Beyond Transaction: Innovative Solutions for Governance, Social Impact, and Education”</p>
+                                <p>Participated in the 7th MIMAROPA Regional IT Congress, gaining insights into blockchain technology and its applications in governance.</p>
+                                <a
+                                    class="cert-link"
+                                    href="images/certifications/7th-MIMAROPA-Regional-IT-Congress.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Certificate of Participation</a>
+                            </div>
+                            <div class="achievement-media">
+                                <img
+                                    class="experience-image"
+                                    src="images/certifications/7th-MIMAROPA.jpg"
+                                    alt="7th MIMAROPA Regional IT Congress certificate"
+                                />
+                            </div>
+                        </article>
+
+                        <article class="experience-card achievement-card certification-card reverse">
+                            <div class="achievement-media">
+                                <img
+                                    class="experience-image"
+                                    src="images/certifications/5th-MIMAROPA.jpg"
+                                    alt="5th MIMAROPA Regional IT Congress certificate"/>
+                            </div>
+                            <div class="achievement-copy">
+                                <span class="experience-number">04 / SEMINARS & EVENTS</span>
+                                <h3>5th MIMAROPA Regional IT Congress</h3>
+                                <p class="cert-event-theme">
+                                  <strong>Theme:</strong> “The Rise of Artificial Intelligence: Transforming Industries and Job Opportunities”</p>
+                                <p>Participated in the 5th MIMAROPA Regional IT Congress, learning about how AI is transforming industries, creating new job opportunities, and shaping the future.</p>
+                                <a
+                                    class="cert-link"
+                                    href="images/certifications/5th-MIMAROPA-Regional-IT-Congress.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Certificate of Participation</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="certifications-more">
+                        <a
+                            class="cert-link more-link"
+                            href="https://www.credly.com/users/nadine-talens/badges/credly"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >View more certificates</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Experience: internship details and supporting documents. -->
+            <section class="section section-soft" id="experience">
+                <div class="container experience-layout">
+                    <div class="experience-intro">
+                        <p class="eyebrow">MY EXPERIENCE</p>
+                        <h2>Intern under the IT Team Lead Assistants</h2>
+                        <span class="experience-date">August 25 – September 19, 2025</span>
+                        <p>Completed an internship at Knowles Training Institute, supporting technical operations, website maintenance, and data monitoring functions.</p>
+                    </div>
+                    <article class="experience-card experience-feature">
+                        <span class="experience-number">01 / ON-THE-JOB TRAINING / INTERNSHIP</span>
+                        <h3>Knowles Training Institute (Supervised Learning in Java)</h3>
+                        <img class="experience-image"
+                            src="images/experience/Talens - SIL.jpg"
+                            alt="Internship certification of completion"/>
+                        <a
+                            class="cert-link"
+                            href="images/experience/Talens - Internship Certification of Completion.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer">Certificate of Completion</a>
+                        <a
+                            class="cert-link"
+                            href="images/experience/Talens - Internship Letter Completion Certification.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer">Internship Letter Completion Certification</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 7. Contact: email details and a form that prepares an email draft. -->
+            <section class="section contact-section" id="contact">
+                <div class="container contact-grid">
+                    <div>
+                        <p class="eyebrow">LET'S CONNECT</p>
+                        <h2>Looking forward to meeting you!</h2>
+                        <p class="contact-copy">
+                            I am always open to discussing new projects, creative ideas or opportunities to be part of
+                            your vision.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <span class="contact-icon">✉</span>
+                                <div>
+                                    <small>EMAIL</small
+                                    ><a href="mailto:nadine.talens09@gmail.com">nadine.talens09@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send a Message</h3>
+                        <label for="name">Your name</label
+                        ><input id="name" name="name" type="text" placeholder="Enter your full name" required />
+                        <label for="email">Your email</label
+                        ><input id="email" name="email" type="email" placeholder="your.email@example.com" required />
+                        <label for="message">Message</label
+                        ><textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+                        <button class="button primary full-width" type="submit">Send Message ↗</button>
+                        </p>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Dazai inspection warning shown when a visitor uses a blocked inspection shortcut. -->
+        <div
+            id="inspection-popup"
+            class="inspection-popup"
+            role="alertdialog"
+            aria-modal="true"
+            aria-labelledby="inspection-message"
+            aria-hidden="true"
+            hidden
+        >
+            <div class="inspection-cloud">
+                <button
+                    class="inspection-close"
+                    id="inspection-close"
+                    type="button"
+                    aria-label="Close inspection warning"
+                >×</button>
+                <p id="inspection-message">Dazai doesn't allow inspection here.</p>
+                <img
+                    src="images/dazai-osamu.gif"
+                    alt="Dazai Osamu animated GIF"
+                    class="inspection-mascot"
+                />
+            </div>
+        </div>
+
+        <!-- Footer displays the current year, supplied by portfolio.js. -->
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p>© <span id="year"></span> Nadine Talens</p>
+            </div>
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
+</html>
